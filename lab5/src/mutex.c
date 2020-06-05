@@ -66,6 +66,7 @@ void do_one_thing(int *pnum_times) {
       ;                 /* long cycle */
     *pnum_times = work; /* write back */
 	// pthread_mutex_unlock(&mut);
+    usleep(1);
   }
 }
 
@@ -83,6 +84,7 @@ void do_another_thing(int *pnum_times) {
       ;                 /* long cycle */
     *pnum_times = work; /* write back */
     // pthread_mutex_unlock(&mut);
+    usleep(1);
   }
 }
 
